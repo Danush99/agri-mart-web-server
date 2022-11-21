@@ -15,7 +15,7 @@ const mongoose = require("mongoose");
 
 app.use(
     cors({
-      origin: ["http://localhost:3000"],
+      origin: ["https://subtle-meerkat-f37326.netlify.app"],
       methods: ["GET", "POST"],
       credentials: true,
     })
