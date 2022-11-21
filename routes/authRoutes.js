@@ -1,13 +1,13 @@
 const express = require('express');
-const { register, login } = require("../controllers/AuthControllers");
+const { register, login } = require("../Controllers/AuthControllers");
 const { checkUser } = require("../Middlewares/authMiddleware");
 const router = express.Router();
 
-const adminCont = require('../controllers/adminController');
-const authController = require('../controllers/authController');
-const offCont = require('../controllers/officerController');
-const verifyRoles = require('../middlewares/verifyRoles');
-const verifyJWT = require('../middlewares/verifyJWT');
+const adminCont = require('../Controllers/adminController');
+const authController = require('../Controllers/authController');
+const offCont = require('../Controllers/officerController');
+const verifyRoles = require('../Middlewares/verifyRoles');
+const verifyJWT = require('../Middlewares/verifyJWT');
 
 // router.post("/", checkUser); 
 // router.post("/admin/register", adminCont.registerOfficer);
